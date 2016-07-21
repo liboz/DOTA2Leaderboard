@@ -1,0 +1,5 @@
+FSharp.Core
+group Test
+xunit
+xunit.runner.console
+fsunit.xunit

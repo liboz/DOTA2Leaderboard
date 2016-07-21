@@ -1,0 +1,21 @@
+source https://nuget.org/api/v2
+
+nuget FSharp.Core redirects: force
+nuget Suave
+nuget FSharp.Data
+
+group Build
+  source https://nuget.org/api/v2
+  
+  nuget SourceLink.Fake
+  nuget FAKE
+  nuget FSharp.Formatting
+
+  github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+group Test
+  source https://nuget.org/api/v2
+  
+  nuget xunit
+  nuget xunit.runner.console 
+  nuget fsunit.xunit
