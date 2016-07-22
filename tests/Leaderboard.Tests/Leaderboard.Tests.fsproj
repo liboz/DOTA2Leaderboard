@@ -97,8 +97,15 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\src\Leaderboard.Data\Leaderboard.Data.fsproj">
       <Name>Leaderboard.Data</Name>
+      <Project>{38d1880c-d06a-4252-9e94-69b6cc443342}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Leaderboard.Web\Leaderboard.Web.fsproj">
+      <Name>Leaderboard.Web</Name>
       <Project>{dd9deb8c-9734-4630-baac-0bfde44c4f4b}</Project>
       <Private>True</Private>
     </ProjectReference>

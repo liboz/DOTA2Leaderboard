@@ -1,6 +1,7 @@
 source https://nuget.org/api/v2
 
 nuget FSharp.Core redirects: force
+nuget mongodb.driver
 nuget Suave
 nuget FSharp.Data
 

@@ -2,12 +2,17 @@
 #r "../../packages/Suave/lib/net40/Suave.dll"
 #endif
 open Suave
+open Leaderboard.Data
+open MongoDB.Bson
+open MongoDB.Driver
 
 type CmdArgs = { IP: System.Net.IPAddress; Port: Sockets.Port }
 
 [<EntryPoint>]
 let main argv = 
-
+    Source.getAllData() |> ignore
+    Database.getData "americas" ""
+    Database.getData "europe" ""
     // parse arguments
     let args =
         let parse f str = match f str with (true, i) -> Some i | _ -> None

@@ -1,6 +1,6 @@
 module Leaderboard.Tests
 
-open Leaderboard.Data
+open Leaderboard.Web
 open Xunit
 open FsUnit.Xunit
 
